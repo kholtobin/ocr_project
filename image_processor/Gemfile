@@ -1,0 +1,10 @@
+source "https://rubygems.org"
+
+ruby "3.1.2"
+
+#To recognize text from the image
+gem 'rtesseract'
+
+gem 'http'
+
+gem 'bunny'
