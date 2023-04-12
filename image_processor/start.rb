@@ -55,7 +55,7 @@ class OcrWorker
     # Use an OCR library to recognize text from the image.
     # You can use the Tesseract OCR library with the "tesseract" gem or another OCR library.
     # For this example, we will return dummy text as the recognized text.
-    "Sample text from image"
+    puts "Sample text from image "
   end
 
 =begin
