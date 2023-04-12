@@ -35,7 +35,7 @@ class OcrWorker
 
   def rabbitmq_connection
     @rabbitmq_connection ||= begin
-      connection = Bunny.new#(host: 'rabbitmq', user: 'guest', pass: 'guest')
+      connection = Bunny.new(host: 'rabbitmq', user: 'guest', pass: 'guest')
       connection.start
       connection
     end

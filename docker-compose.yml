@@ -2,10 +2,10 @@ version: '3.9'
 
 services:
   web:
-    build: .
+    build: ./ocr_app
     command: bundle exec rails s -p 3000 -b '0.0.0.0'
     volumes:
-      - .:/myapp
+      - ./ocr_app:/myapp
     ports:
       - "3000:3000"
     depends_on:
@@ -19,9 +19,9 @@ services:
       - "15672:15672"
 
   image_processor:
-    build: ../image_processor
-    command: bundle exec ruby start.rb
+    build: ./image_processor
+    command: /bin/bash -c "sleep 10 && bundle exec ruby start.rb"
     volumes:
-      - ../image_processor:/myapp
+      - ./image_processor:/myapp
     depends_on:
       - rabbitmq
