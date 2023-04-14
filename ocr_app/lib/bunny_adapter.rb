@@ -1,19 +1,16 @@
+require 'bunny'
+
 class BunnyAdapter
-  require 'bunny'
-
-  def rabbitmq_connection
-    @rabbitmq_connection ||= begin
-      connection = Bunny.new(host: 'rabbitmq', user: 'guest', pass: 'guest')
-      connection.start
-      connection
-    end
+  def initialize(conn_klass = Bunny)
+    @conn_klass = conn_klass
   end
 
-  def rabbitmq_channel
-    @rabbitmq_channel ||= rabbitmq_connection.create_channel
-  end
+  def establish_connection_queue
+    return @ocr_queue if @ocr_queue
 
-  def ocr_queue
-    @ocr_queue ||= rabbitmq_channel.queue('ocr')
+    @rabbitmq_connection = @conn_klass.new(host: 'rabbitmq', user: 'guest', pass: 'guest')
+    @rabbitmq_connection.start
+
+    @ocr_queue = @rabbitmq_connection.create_channel.queue('ocr')
   end
 end
