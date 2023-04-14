@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/myapp/spec/spec_helper.rb": {
+      "/Users/mkholt/projects/ocr_project/ocr_app/spec/spec_helper.rb": {
         "lines": [
           1,
           null,
@@ -25,7 +25,7 @@
           null
         ]
       },
-      "/myapp/config/environment.rb": {
+      "/Users/mkholt/projects/ocr_project/ocr_app/config/environment.rb": {
         "lines": [
           null,
           1,
@@ -34,7 +34,7 @@
           1
         ]
       },
-      "/myapp/config/application.rb": {
+      "/Users/mkholt/projects/ocr_project/ocr_app/config/application.rb": {
         "lines": [
           1,
           null,
@@ -53,7 +53,7 @@
           null
         ]
       },
-      "/myapp/config/boot.rb": {
+      "/Users/mkholt/projects/ocr_project/ocr_app/config/boot.rb": {
         "lines": [
           1,
           null,
@@ -61,7 +61,7 @@
           1
         ]
       },
-      "/myapp/config/environments/test.rb": {
+      "/Users/mkholt/projects/ocr_project/ocr_app/config/environments/test.rb": {
         "lines": [
           1,
           null,
@@ -125,7 +125,7 @@
           null
         ]
       },
-      "/myapp/config/initializers/cors.rb": {
+      "/Users/mkholt/projects/ocr_project/ocr_app/config/initializers/cors.rb": {
         "lines": [
           null,
           null,
@@ -145,7 +145,7 @@
           null
         ]
       },
-      "/myapp/config/initializers/filter_parameter_logging.rb": {
+      "/Users/mkholt/projects/ocr_project/ocr_app/config/initializers/filter_parameter_logging.rb": {
         "lines": [
           null,
           null,
@@ -157,7 +157,7 @@
           null
         ]
       },
-      "/myapp/config/initializers/inflections.rb": {
+      "/Users/mkholt/projects/ocr_project/ocr_app/config/initializers/inflections.rb": {
         "lines": [
           null,
           null,
@@ -177,7 +177,7 @@
           null
         ]
       },
-      "/myapp/config/initializers/rabbitmq.rb": {
+      "/Users/mkholt/projects/ocr_project/ocr_app/config/initializers/rabbitmq.rb": {
         "lines": [
           null,
           null,
@@ -205,30 +205,30 @@
           null
         ]
       },
-      "/myapp/config/routes.rb": {
+      "/Users/mkholt/projects/ocr_project/ocr_app/config/routes.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/myapp/app/controllers/ocr_controller.rb": {
+      "/Users/mkholt/projects/ocr_project/ocr_app/app/controllers/ocr_controller.rb": {
         "lines": [
           1,
           1,
           2,
-          2,
+          0,
           null,
           null
         ]
       },
-      "/myapp/app/controllers/application_controller.rb": {
+      "/Users/mkholt/projects/ocr_project/ocr_app/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/myapp/spec/lib/bunny_adapter_spec.rb": {
+      "/Users/mkholt/projects/ocr_project/ocr_app/spec/lib/bunny_adapter_spec.rb": {
         "lines": [
           1,
           1,
@@ -250,7 +250,7 @@
           null
         ]
       },
-      "/myapp/lib/bunny_adapter.rb": {
+      "/Users/mkholt/projects/ocr_project/ocr_app/lib/bunny_adapter.rb": {
         "lines": [
           1,
           null,
@@ -265,30 +265,12 @@
           4,
           4,
           null,
-          4,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
+          2,
           null,
           null
         ]
       }
     },
-    "timestamp": 1681481337
+    "timestamp": 1681487586
   }
 }

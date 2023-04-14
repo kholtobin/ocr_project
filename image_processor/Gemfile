@@ -8,3 +8,9 @@ gem 'rtesseract'
 gem 'http'
 
 gem 'bunny'
+
+gem 'rspec'
+
+gem 'bunny-mock'
+
+gem 'pry'
