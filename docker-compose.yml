@@ -1,6 +1,13 @@
 version: '3.9'
 
 services:
+  rabbitmq:
+    image: "rabbitmq:3.8-management-alpine"
+    hostname: "rabbitmq"
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
   web:
     build: ./ocr_app
     command: bundle exec rails s -p 3000 -b '0.0.0.0'
@@ -11,17 +18,20 @@ services:
     depends_on:
       - rabbitmq
 
-  rabbitmq:
-    image: "rabbitmq:3-management"
-    hostname: "rabbitmq"
-    ports:
-      - "5672:5672"
-      - "15672:15672"
-
   image_processor:
     build: ./image_processor
-    command: /bin/bash -c "sleep 10 && bundle exec ruby start.rb"
+    command: >
+      /bin/sh -c "
+        apt-get update && apt-get install -y netcat;
+        while ! nc -z rabbitmq 5672; do
+          echo 'Waiting for RabbitMQ...';
+          sleep 1;
+        done;
+        echo 'RabbitMQ is ready!';
+        bundle exec ruby start.rb"
     volumes:
       - ./image_processor:/myapp
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
     depends_on:
       - rabbitmq
