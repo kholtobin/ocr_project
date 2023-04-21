@@ -24,6 +24,6 @@ class ExtractTextService
   private
 
   def perform_ocr(image_path)
-    RTesseract.new(image_path).to_s
+    RTesseract.new(image_path).to_s.strip
   end
 end

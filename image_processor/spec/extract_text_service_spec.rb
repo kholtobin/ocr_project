@@ -4,7 +4,7 @@ require_relative '../extract_text_service'
 RSpec.describe ExtractTextService do
   let(:file_url) { 'https://tesseract.projectnaptha.com/img/eng_bw.png' }
   let(:file_text) do
-    <<~TEXT
+    <<~TEXT.strip
      Text found: Mild Splendour of the various-vested Night!
      Mother of wildly-working visions! hail!
      I watch thy gliding, while with watery light

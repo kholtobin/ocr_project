@@ -1,6 +1,6 @@
 example_id                                         | status | run_time        |
 -------------------------------------------------- | ------ | --------------- |
-./spec/controllers/ocr_controller_spec.rb[1:1:1:1] | failed | 0.04385 seconds |
-./spec/controllers/ocr_controller_spec.rb[1:1:2:1] | failed | 0.0063 seconds  |
-./spec/lib/bunny_adapter_spec.rb[1:1:1]            | passed | 0.01036 seconds |
-./spec/lib/bunny_adapter_spec.rb[1:1:2]            | passed | 0.00033 seconds |
+./spec/controllers/ocr_controller_spec.rb[1:1:1:1] | passed | 0.01542 seconds |
+./spec/controllers/ocr_controller_spec.rb[1:1:2:1] | passed | 0.00903 seconds |
+./spec/lib/bunny_adapter_spec.rb[1:1:1]            | passed | 0.00922 seconds |
+./spec/lib/bunny_adapter_spec.rb[1:1:2]            | passed | 0.00133 seconds |
