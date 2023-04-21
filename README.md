@@ -4,7 +4,18 @@ An OCR (Optical Character Recognition) Image Processor is a simple application t
 Install Docker.
 Clone repository:
 ```bash
-git clone https://github.com/your-username/ocr-image-processor.git
-cd ocr-image-processor
-docker-compose up --build
+git clone git@github.com:kholtobin/ocr_project.git
+cd ocr_project
+docker-compose build
+docker-compose up
+```
+
+# Run tests for rails application part:
+```bash
+docker-compose exec web rspec
+```
+
+# Run test for image_processor:
+```bash
+docker-compose exec image_processor rspec
 ```
